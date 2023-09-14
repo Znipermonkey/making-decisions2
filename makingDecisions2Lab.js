@@ -104,7 +104,7 @@ console.log(someNum)
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-if ( myFavoriteNumbers.length>= 7){
+if ( myFavoriteNumbers.length >= 7){
   var someNum = myFavoriteNumbers.slice (6, 7)
   console.log (someNum)
 }else{
@@ -162,6 +162,26 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 
 //Code Here
 
+switch (letterGrade) {
+  case "A":
+    console.log("The student is doing excellently") 
+    break;
+  case "B":
+    console.log("The student is doing well")
+    break;
+  case "C":
+    console.log("The student is doing alright")
+    break;
+  case "D":
+    console.log("The student is not doing very well")
+    break;
+  case "F":
+    console.log("The student is failing")
+    break;
+  default:
+    console.log ("not an eligiable grade")
+ 
+} 
 
 
 ////////// PROBLEM 11 //////////
@@ -189,3 +209,14 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+for (let i = 1; i <= 100; i++){
+  if (i%3 == 0 && i%5 == 0){
+    console.log("Devmountain")
+  }else if (i%3  == 0){
+    console.log("Dev")
+  }else if (i%5 == 0){
+    console.log("Mountain")
+  }else{
+    console.log(i)
+  }
+}
